@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-4 distancia-imagen">
-            <a href="index.html" class="">
+            <a href="/" class="">
               <img
                 src="../assets/img/logo-franquicia.png"
                 alt="Logo Franquicia"

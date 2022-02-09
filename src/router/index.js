@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home";
+import PaginaInterna from "@/views/PaginaInterna";
 
 // import ListMarca from "@/components/Marca/ListMarca";
 
@@ -13,11 +14,11 @@ export default new Router({
       name: "home",
       component: Home,
     },
-    // {
-    //   path: "/marcas",
-    //   name: "ListMarca",
-    //   component: ListMarca,
-    // },
+    {
+      path: "/buscar",
+      name: "paginainterna",
+      component: PaginaInterna,
+    },
   ],
   mode: "history",
 });

@@ -121,7 +121,8 @@ export default {
     },
   },
   created() {
-    this.getCategoria(), this.getMarcas();
+    // this.getCategoria(),
+    // this.getMarcas();
   },
 };
 </script>

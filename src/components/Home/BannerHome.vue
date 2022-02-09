@@ -83,12 +83,12 @@
                   <option value="50000">+ de $50.000</option>
                 </select>
               </div>
-              <a href="paginainterna-1.html">
+              <a href="/buscar">
                 <button type="button" class="boton mt-2 mt-sm-0">Buscar</button>
               </a>
             </div>
             <div class="contenedor-boton">
-              <a href="paginainterna-1.html">
+              <a href="/buscar">
                 <button type="button" class="boton-xs mt-2 mt-lg-0">
                   Buscar
                 </button>

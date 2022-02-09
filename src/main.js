@@ -14,6 +14,8 @@ require("./plugins/fontawesome");
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
+import { dollarFilter } from '@/filter'
+Vue.filter('dollar', dollarFilter)
 
 /* eslint-disable no-new */
 new Vue({
