@@ -238,32 +238,23 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li>Restaurantes</li>
-                    <li>Agencias de Viajes</li>
-                    <li>Agencias Inmobiliarias</li>
-                    <li>Asesoría y Consultoría</li>
-                    <li>Automotriz</li>
-                    <li>Belleza</li>
-                    <li>Restaurantes</li>
-                    <li>Deportes</li>
-                    <li>Distribución y Venta</li>
-                    <li>Enseñanza y Formación</li>
-                    <li>Infantiles</li>
-                    <li>Hogar y Decoración</li>
-                    <li>Hotelería</li>
-                    <li>Informática e Internet</li>
-                    <li>Marketing y Publicidad</li>
-                    <li>Mensajería y Transporte</li>
-                    <li>Moda</li>
-                    <li>Ocio y Tiempo Libre</li>
-                    <li>Papelería</li>
-                    <li>Salud y Bienestar</li>
-                    <li>Seguridad</li>
-                    <li>Servicios de Limpieza</li>
-                    <li>Servicios Especializados</li>
-                    <li>Telecomunicaciones y Telefonía</li>
-                    <li>Tiendas Especializadas</li>
-                    <li>Lavanderías y Tintorerías</li>
+                    <li>
+                      <a href="/buscar/"> Todos </a>
+                    </li>
+                    <li
+                      v-for="cat in categoria"
+                      :key="cat.id"
+                      :value="cat.nombre"
+                    >
+                      <router-link
+                        :to="{
+                          name: 'categorias',
+                          params: { categoria: cat.id },
+                        }"
+                      >
+                        {{ cat.nombre }}
+                      </router-link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -289,25 +280,21 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li>Pichincha</li>
-                    <li>Azuay</li>
-                    <li>Bolívar</li>
-                    <li>Cañar</li>
-                    <li>Carchi</li>
-                    <li>Chimborazo</li>
-                    <li>Cotopaxi</li>
-                    <li>El Oro</li>
-                    <li>Esmeraldas</li>
-                    <li>Galápagos</li>
-                    <li>Guayas</li>
-                    <li>Imbabura</li>
-                    <li>Napo</li>
-                    <li>Orellana</li>
-                    <li>Pastaza</li>
-                    <li>Quito</li>
-                    <li>Sucumbíos</li>
-                    <li>Tungurahua</li>
-                    <li>Zamora Chinchipe</li>
+                    <li>Todos</li>
+                    <li
+                      v-for="ubi in ubicacion"
+                      :key="ubi.id"
+                      :value="ubi.nombre"
+                    >
+                      <router-link
+                        :to="{
+                          name: 'ubicaciones',
+                          params: { ubicacion: ubi.id },
+                        }"
+                      >
+                        {{ ubi.nombre }}
+                      </router-link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -433,11 +420,28 @@
                 />
 
                 <div
-                  class="container-directorio col-12 text-center wow animate__fadeIn"
+                  class="
+                    container-directorio
+                    col-12
+                    text-center
+                    wow
+                    animate__fadeIn
+                  "
                   data-wow-delay="0.2s"
                 >
                   <ul
-                    class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 font-weight-500 alt-font padding-5-half-rem-bottom lg-padding-3-half-rem-bottom sm-padding-2-rem-bottom"
+                    class="
+                      portfolio-filter
+                      grid-filter
+                      nav nav-tabs
+                      justify-content-center
+                      border-0
+                      font-weight-500
+                      alt-font
+                      padding-5-half-rem-bottom
+                      lg-padding-3-half-rem-bottom
+                      sm-padding-2-rem-bottom
+                    "
                   >
                     <li class="nav active">
                       <label class="border-0" for="Heladerias"
@@ -499,7 +503,6 @@
                 </button>
               </div>
             </div>
-
           </div>
         </div>
         <!-- ===================== Fin Izquierda ======================== -->
@@ -560,6 +563,7 @@
 import BannerPaginaInterna1 from "../components/PaginaInterna1/BannerPaginaInterna1.vue";
 import Marca from "@/components/Marca/Marca";
 import axios from "axios";
+// import apiMarcas from "../api";
 
 export default {
   name: "PaginaIntena1",
@@ -570,13 +574,26 @@ export default {
   data() {
     return {
       marcas: [],
+      ubicacion: [],
       page: 1,
       pages: 1,
       search: "",
+      categoria: [],
     };
+  },
+  // Watch sirve para que la pagina se recarge al cambiar la categoria en url
+  watch: {
+    "$route.params.categoria": function () {
+      this.filtrarMarcas();
+    },
+    "$route.params.ubicacion": function () {
+      this.filtrarMarcas();
+    },
   },
   created() {
     this.getMarcas();
+    this.getCategoria();
+    this.getUbicacion();
   },
   methods: {
     getMarcas() {
@@ -587,10 +604,32 @@ export default {
 
       // const path2 = "http://127.0.0.1:8000/api/v1/marcas/" ,  {params} ;
       axios
-        .get("http://127.0.0.1:8000/api/v1/marcas/", {params})
+        .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
         .then((response) => {
           this.marcas = response.data.results;
           this.pages = response.data.total_pages;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    getCategoria() {
+      const path = "http://127.0.0.1:8000/api/v1/categoria/";
+      axios
+        .get(path)
+        .then((response) => {
+          this.categoria = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    getUbicacion() {
+      const path = "http://127.0.0.1:8000/api/v1/ubicacion/";
+      axios
+        .get(path)
+        .then((response) => {
+          this.ubicacion = response.data;
         })
         .catch((error) => {
           console.log(error);
@@ -604,6 +643,25 @@ export default {
       this.page = 1;
       this.getMarcas();
     },
+    filtrarMarcas: function () {
+      const params = {
+        categoria: this.$route.params.categoria,
+        ubicacion: this.$route.params.ubicacion,
+      };
+      axios
+        .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
+        .then((response) => {
+          this.marcas = response.data.results;
+        });
+
+      // let filtros = 'categoria=' + this.$route.params.categoria
+      // apiMarcas.filtrarMarcas(filtros).then((response) => {
+      //   this.marcas = response.data.results
+      // });
+    },
+  },
+  beforeMount() {
+    this.filtrarMarcas();
   },
 };
 </script>

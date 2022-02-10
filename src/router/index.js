@@ -18,6 +18,18 @@ export default new Router({
       path: "/buscar",
       name: "paginainterna",
       component: PaginaInterna,
+      children:[
+        {
+          path: "/buscar/:categoria",
+          name: "categorias",
+          component: PaginaInterna,
+        },
+        {
+          path: "/buscar/:ubicacion",
+          name: "ubicaciones",
+          component: PaginaInterna,
+        }
+      ]
     },
   ],
   mode: "history",
