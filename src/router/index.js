@@ -28,7 +28,7 @@ export default new Router({
           path: "/buscar/:ubicacion",
           name: "ubicaciones",
           component: PaginaInterna,
-        }
+        },
       ]
     },
   ],

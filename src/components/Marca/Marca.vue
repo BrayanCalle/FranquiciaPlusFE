@@ -46,7 +46,7 @@
       <div class="card-terminacion">
         <div class="col-7 d-inline-block color-parrafos tipo-letra">
           <font-awesome-icon icon="store" class="color-principal" />
-          <small>{{ marca.categoria }}</small>
+          <small>{{ marca.categoria.nombre }}</small>
         </div>
         <div class="col-4 d-inline-block ps-2 ps-sm-4">
           <a :href="marca.nombre">

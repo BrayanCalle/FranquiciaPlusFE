@@ -9,6 +9,4 @@ const apiMarcas = {
   },
 };
 
-export default {
-  apiMarcas,
-};
+export default apiMarcas

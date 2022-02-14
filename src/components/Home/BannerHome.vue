@@ -39,11 +39,12 @@
             <div class="container-cuadros-menu">
               <div class="sidebar-box">
                 <select
+                  v-model="ubicacionelegida"
                   name="city"
                   id="city"
                   class="form-select cuadros desplegable"
                 >
-                  <option value disabled selected>Ubicación</option>
+                  <option value="" disabled selected>Ubicación</option>
                   <option
                     v-for="ubi in ubicacion"
                     :key="ubi.id"
@@ -55,11 +56,12 @@
               </div>
               <div class="sidebar-box">
                 <select
+                  v-model="categoriaelegida"
                   name="categorias"
                   id="categorias"
                   class="form-select cuadros desplegable"
                 >
-                  <option value disabled selected>Categorías</option>
+                  <option value="" disabled selected>Categorías</option>
                   <option
                     v-for="cat in categoria"
                     :key="cat.id"
@@ -72,19 +74,26 @@
 
               <div class="sidebar-box">
                 <select
+                  v-model="inversionelegida"
                   name="inversion"
                   id="inversion"
                   class="form-select cuadros desplegable"
                 >
-                  <option value disabled selected>Inversión</option>
+                  <option value="10000" disabled selected>Inversión</option>
                   <option value="9000 ">$9.000 a $15.000</option>
                   <option value="15000">$15.000 a $25.000</option>
                   <option value="25000">$25.000 a $50.000</option>
                   <option value="50000">+ de $50.000</option>
                 </select>
               </div>
-              <a href="/buscar">
-                <button type="button" class="boton mt-2 mt-sm-0">Buscar</button>
+              <a>
+                <button
+                  @click="filtrobuscar"
+                  type="submit"
+                  class="boton mt-2 mt-sm-0"
+                >
+                  Buscar
+                </button>
               </a>
             </div>
             <div class="contenedor-boton">
@@ -110,6 +119,9 @@ export default {
     return {
       ubicacion: [],
       categoria: [],
+      ubicacionelegida: "",
+      categoriaelegida: "",
+      inversionelegida: "10000",
     };
   },
   methods: {
@@ -135,6 +147,25 @@ export default {
           console.log(error);
         });
     },
+    filtrobuscar() {
+      let categoriaelegida1 = this.categoriaelegida;
+      let ubicacionelegida1 = this.ubicacionelegida;
+      // let inversionelegida1 = this.inversionelegida;
+      // http://localhost:8080/buscar/3/?ubicacion=2/?inversion=9000
+      // alert ("/buscar/"+ categoriaelegida1 + '?&ubicacion=' + ubicacionelegida1)
+      if (categoriaelegida1 != "" && ubicacionelegida1 == "") {
+        window.location.href = "/buscar/" + categoriaelegida1;
+        console.log("entre al primer if");
+      // } else if (ubicacionelegida1 != "" && categoriaelegida1 == "") {
+      //   window.location.href =
+      //     "/buscar/" + "" + "&ubicacion=" + ubicacionelegida1;
+      //   console.log("entre al segundo if");
+      // } else if (categoriaelegida1 != "" && ubicacionelegida1 != "") {
+      //   window.location.href =
+      //     "/buscar/" + categoriaelegida1 + "&ubicaion=" + ubicacionelegida1;
+      //   console.log("entre al tercer if");
+      } else window.location.href = "/buscar/";
+    },
   },
   created() {
     this.getUbicacion();
@@ -142,7 +173,5 @@ export default {
   },
 };
 </script>
-
-
 
 <style lang="css" scoped></style>

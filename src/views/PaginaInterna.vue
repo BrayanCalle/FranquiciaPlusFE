@@ -249,7 +249,7 @@
                       <router-link
                         :to="{
                           name: 'categorias',
-                          params: { categoria: cat.id },
+                          params: { categoria: cat.nombre },
                         }"
                       >
                         {{ cat.nombre }}
@@ -286,10 +286,13 @@
                       :key="ubi.id"
                       :value="ubi.nombre"
                     >
+                      <!-- <a :href="'?&ubicacion=' + ubi.id">
+                        {{ ubi.nombre }}
+                      </a> -->
                       <router-link
                         :to="{
                           name: 'ubicaciones',
-                          params: { ubicacion: ubi.id },
+                          params: { ubicacion: ubi.nombre },
                         }"
                       >
                         {{ ubi.nombre }}
@@ -563,7 +566,7 @@
 import BannerPaginaInterna1 from "../components/PaginaInterna1/BannerPaginaInterna1.vue";
 import Marca from "@/components/Marca/Marca";
 import axios from "axios";
-// import apiMarcas from "../api";
+import apiMarcas from "../api";
 
 export default {
   name: "PaginaIntena1",
@@ -644,15 +647,46 @@ export default {
       this.getMarcas();
     },
     filtrarMarcas: function () {
+      // let filtros = 'categoria__nombre=' + this.$route.params.categoria;
+      // if (this.$route.query.ubicacion) {
+      //   filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
+      // }
+
+      // console.log(filtros);
+      // apiMarcas.filtrarMarcas(filtros)
+      // .then((response) => {
+      //   this.marcas = response.data.results;
+      // });
+
+      // Otro metodo
+
+
       const params = {
-        categoria: this.$route.params.categoria,
-        ubicacion: this.$route.params.ubicacion,
+        categoria__nombre: this.$route.params.categoria,
+        ubicacion__nombre: this.$route.params.ubicacion,
       };
+
+
       axios
         .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
         .then((response) => {
           this.marcas = response.data.results;
         });
+
+
+
+          // console.log(("http://127.0.0.1:8000/api/v1/marcas/",  { params1 }))
+
+      // const params2 = {
+      //   ubicacion: this.$route.params.ubicacion,
+      // };
+
+      // Otro metodo
+      // axios
+      //   .get("http://127.0.0.1:8000/api/v1/marcas/", { params2 })
+      //   .then((response) => {
+      //     this.marcas = response.data.results;
+      //   });
 
       // let filtros = 'categoria=' + this.$route.params.categoria
       // apiMarcas.filtrarMarcas(filtros).then((response) => {
