@@ -655,7 +655,10 @@ export default {
       this.getMarcas();
     },
     filtrarMarcas: function () {
-      let filtros = 'categoria__nombre=' + this.$route.params.categoria;
+      let filtros = ' '
+      if(this.$route.params.categoria){
+        filtros = 'categoria__nombre=' + this.$route.params.categoria;
+      }
       if (this.$route.query.ubicacion) {
         filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
       }
