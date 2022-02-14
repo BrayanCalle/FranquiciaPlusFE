@@ -239,7 +239,15 @@
                 <div class="accordion-body">
                   <ul>
                     <li>
-                      <a href="/buscar/"> Todos </a>
+                      <!-- <a href="/buscar/"> Todos </a> -->
+                      <router-link
+                        :to="{
+                          name: 'paginainterna',
+                          params: { categoria: ' ' },
+                        }"
+                      >
+                        Todos
+                      </router-link>
                     </li>
                     <li
                       v-for="cat in categoria"
@@ -286,17 +294,17 @@
                       :key="ubi.id"
                       :value="ubi.nombre"
                     >
-                      <!-- <a :href="'?&ubicacion=' + ubi.id">
+                      <a :href="'?&ubicacion=' + ubi.nombre">
                         {{ ubi.nombre }}
-                      </a> -->
-                      <router-link
+                      </a>
+                      <!-- <router-link
                         :to="{
                           name: 'ubicaciones',
                           params: { ubicacion: ubi.nombre },
                         }"
                       >
                         {{ ubi.nombre }}
-                      </router-link>
+                      </router-link> -->
                     </li>
                   </ul>
                 </div>
@@ -589,9 +597,9 @@ export default {
     "$route.params.categoria": function () {
       this.filtrarMarcas();
     },
-    "$route.params.ubicacion": function () {
-      this.filtrarMarcas();
-    },
+    // "$route.query.ubicacion": function () {
+    //   this.filtrarMarcas();
+    // },
   },
   created() {
     this.getMarcas();
@@ -647,31 +655,31 @@ export default {
       this.getMarcas();
     },
     filtrarMarcas: function () {
-      // let filtros = 'categoria__nombre=' + this.$route.params.categoria;
-      // if (this.$route.query.ubicacion) {
-      //   filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
-      // }
+      let filtros = 'categoria__nombre=' + this.$route.params.categoria;
+      if (this.$route.query.ubicacion) {
+        filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
+      }
 
-      // console.log(filtros);
-      // apiMarcas.filtrarMarcas(filtros)
-      // .then((response) => {
-      //   this.marcas = response.data.results;
-      // });
+      console.log(filtros);
+      apiMarcas.filtrarMarcas(filtros)
+      .then((response) => {
+        this.marcas = response.data.results;
+      });
 
       // Otro metodo
 
 
-      const params = {
-        categoria__nombre: this.$route.params.categoria,
-        ubicacion__nombre: this.$route.params.ubicacion,
-      };
+      // const params = {
+      //   categoria__nombre: this.$route.params.categoria,
+      //   ubicacion__nombre: this.$route.params.ubicacion,
+      // };
 
 
-      axios
-        .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
-        .then((response) => {
-          this.marcas = response.data.results;
-        });
+      // axios
+      //   .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
+      //   .then((response) => {
+      //     this.marcas = response.data.results;
+      //   });
 
 
 

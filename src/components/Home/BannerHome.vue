@@ -156,15 +156,15 @@ export default {
       if (categoriaelegida1 != "" && ubicacionelegida1 == "") {
         window.location.href = "/buscar/" + categoriaelegida1;
         console.log("entre al primer if");
-      // } else if (ubicacionelegida1 != "" && categoriaelegida1 == "") {
-      //   window.location.href =
-      //     "/buscar/" + "" + "&ubicacion=" + ubicacionelegida1;
-      //   console.log("entre al segundo if");
-      // } else if (categoriaelegida1 != "" && ubicacionelegida1 != "") {
-      //   window.location.href =
-      //     "/buscar/" + categoriaelegida1 + "&ubicaion=" + ubicacionelegida1;
-      //   console.log("entre al tercer if");
-      } else window.location.href = "/buscar/";
+      } else if (ubicacionelegida1 != "" && categoriaelegida1 == "") {
+        window.location.href =
+          "/buscar/" + "" + "&ubicacion=" + ubicacionelegida1;
+        console.log("entre al segundo if");
+      } else if (categoriaelegida1 != "" && ubicacionelegida1 != "") {
+        window.location.href =
+          "/buscar/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1;
+        console.log("entre al tercer if");
+      } else window.location.href = "/buscar/%20";
     },
   },
   created() {

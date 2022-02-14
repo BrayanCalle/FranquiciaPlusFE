@@ -24,11 +24,11 @@ export default new Router({
           name: "categorias",
           component: PaginaInterna,
         },
-        {
-          path: "/buscar/:ubicacion",
-          name: "ubicaciones",
-          component: PaginaInterna,
-        },
+        // {
+        //   path: "/buscar/:ubicacion",
+        //   name: "ubicaciones",
+        //   component: PaginaInterna,
+        // },
       ]
     },
   ],
