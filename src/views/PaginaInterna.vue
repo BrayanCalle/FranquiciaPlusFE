@@ -362,10 +362,15 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li>$9.000 a $15.000</li>
-                    <li>$15.000 a $25.000</li>
-                    <li>$25.000 a $50.000</li>
-                    <li>+ de $50.000</li>
+                    <li
+                      v-for="inv in inversion"
+                      :key="inv.id"
+                      :value="inv.nombre"
+                    >
+                      <a :href="'?&inversion__nombre=' + inv.nombre">
+                        {{ inv.nombre }}
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -545,12 +550,12 @@
               <li class="page-item">
                 <a class="page-link marcado">{{ page }}</a>
               </li>
-              <li class="page-item">
+              <!-- <li class="page-item">
                 <a class="page-link">{{ page + 1 }}</a>
               </li>
               <li class="page-item">
                 <a class="page-link">{{ page + 2 }}</a>
-              </li>
+              </li> -->
               <li class="page-item">
                 <a
                   class="page-link"
@@ -586,6 +591,7 @@ export default {
     return {
       marcas: [],
       ubicacion: [],
+      inversion: [],
       page: 1,
       pages: 1,
       search: "",
@@ -597,14 +603,15 @@ export default {
     "$route.params.categoria": function () {
       this.filtrarMarcas();
     },
-    // "$route.query.ubicacion": function () {
-    //   this.filtrarMarcas();
-    // },
+    "$route.query.ubicacion": function () {
+      this.filtrarMarcas();
+    },
   },
   created() {
     this.getMarcas();
     this.getCategoria();
     this.getUbicacion();
+    this.getInversion();
   },
   methods: {
     getMarcas() {
@@ -641,6 +648,17 @@ export default {
         .get(path)
         .then((response) => {
           this.ubicacion = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    getInversion() {
+      const path = "http://127.0.0.1:8000/api/v1/inversion/";
+      axios
+        .get(path)
+        .then((response) => {
+          this.inversion = response.data;
         })
         .catch((error) => {
           console.log(error);

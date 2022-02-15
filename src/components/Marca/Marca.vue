@@ -45,7 +45,10 @@
       </div>
       <div class="card-terminacion">
         <div class="col-7 d-inline-block color-parrafos tipo-letra">
-          <font-awesome-icon icon="store" class="color-principal" />
+          <font-awesome-icon
+            class="color-principal"
+            :icon="marca.categoria.iconofp"
+          />
           <small>{{ marca.categoria.nombre }}</small>
         </div>
         <div class="col-4 d-inline-block ps-2 ps-sm-4">
@@ -68,17 +71,18 @@ export default {
   data() {
     return {
       hover: false,
+      // iconom: 'store',
     };
   },
 
-  props: ["marca"] 
-  
-//   {
-    // marcas: {
-    //   type: Array,
-    //   default: () => [],
-    // },
-//   },
+  props: ["marca"],
+
+  //   {
+  // marcas: {
+  //   type: Array,
+  //   default: () => [],
+  // },
+  //   },
 };
 </script>
 
