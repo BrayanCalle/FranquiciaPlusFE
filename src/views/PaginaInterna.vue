@@ -362,12 +362,8 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li
-                      v-for="inv in inversion"
-                      :key="inv.id"
-                      :value="inv.nombre"
-                    >
-                      <a :href="'?&inversion__nombre=' + inv.nombre">
+                    <li v-for="inv in inversion" :key="inv.id" :value="inv.id">
+                      <a :href="'?&inversion=' + inv.id">
                         {{ inv.nombre }}
                       </a>
                     </li>
@@ -531,44 +527,48 @@
               v-bind:marca="marca"
             />
           </div>
-          <!-- Inicia Paginacion-->
-          <nav
-            aria-label="Page navigation example"
-            rol="navegation"
-            id="paginacion-inter1"
-          >
-            <ul class="pagination">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  aria-label="Previous"
-                  v-on:click="changePage(page - 1)"
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link marcado">{{ page }}</a>
-              </li>
-              <!-- <li class="page-item">
-                <a class="page-link">{{ page + 1 }}</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link">{{ page + 2 }}</a>
-              </li> -->
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  aria-label="Next"
-                  v-on:click="changePage(page + 1)"
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- Fin Paginacion-->
         </div>
+          <!-- Inicia Paginacion-->
+          <div class="d-flex justify-content-end">
+            <div class="col-md-9">
+              <nav
+                aria-label="Page navigation example"
+                rol="navegation"
+                id="paginacion-inter1"
+              >
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a
+                      class="page-link"
+                      aria-label="Previous"
+                      v-on:click="changePage(page - 1)"
+                    >
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link marcado">{{ page }}</a>
+                  </li>
+                  <!-- <li class="page-item">
+                    <a class="page-link">{{ page + 1 }}</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link">{{ page + 2 }}</a>
+                  </li> -->
+                  <li class="page-item">
+                    <a
+                      class="page-link"
+                      aria-label="Next"
+                      v-on:click="changePage(page + 1)"
+                    >
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Fin Paginacion-->
       </div>
     </section>
     <!-- ===================== Fin Derecha ======================== -->
@@ -604,6 +604,9 @@ export default {
       this.filtrarMarcas();
     },
     "$route.query.ubicacion": function () {
+      this.filtrarMarcas();
+    },
+    "$route.query.inversion": function () {
       this.filtrarMarcas();
     },
   },
@@ -673,28 +676,28 @@ export default {
       this.getMarcas();
     },
     filtrarMarcas: function () {
-      let filtros = ' '
-      if(this.$route.params.categoria){
-        filtros = 'categoria__nombre=' + this.$route.params.categoria;
+      let filtros = " ";
+      if (this.$route.params.categoria) {
+        filtros = "categoria__nombre=" + this.$route.params.categoria;
       }
       if (this.$route.query.ubicacion) {
         filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
       }
+      if (this.$route.query.inversion) {
+        filtros = filtros + "&inversion=" + this.$route.query.inversion;
+      }
 
       console.log(filtros);
-      apiMarcas.filtrarMarcas(filtros)
-      .then((response) => {
+      apiMarcas.filtrarMarcas(filtros).then((response) => {
         this.marcas = response.data.results;
       });
 
       // Otro metodo
 
-
       // const params = {
       //   categoria__nombre: this.$route.params.categoria,
       //   ubicacion__nombre: this.$route.params.ubicacion,
       // };
-
 
       // axios
       //   .get("http://127.0.0.1:8000/api/v1/marcas/", { params })
@@ -702,9 +705,7 @@ export default {
       //     this.marcas = response.data.results;
       //   });
 
-
-
-          // console.log(("http://127.0.0.1:8000/api/v1/marcas/",  { params1 }))
+      // console.log(("http://127.0.0.1:8000/api/v1/marcas/",  { params1 }))
 
       // const params2 = {
       //   ubicacion: this.$route.params.ubicacion,
