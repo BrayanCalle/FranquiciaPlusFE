@@ -232,7 +232,7 @@ export default {
       ) {
         window.location.href =
           "/buscar/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1 + "&inversion=" + inversionelegida1;
-      } else window.location.href = "/buscar/%20";
+      } else window.location.href = "/buscar/";
     },
   },
   created() {

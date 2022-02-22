@@ -20,10 +20,15 @@ export default new Router({
       component: PaginaInterna,
       children:[
         {
-          path: "/buscar/:categoria",
-          name: "categorias",
+          path: "/buscar/:estado",
+          name: "estados",
           component: PaginaInterna,
         },
+        // {
+        //   path: "/buscar/:categoria",
+        //   name: "categorias",
+        //   component: PaginaInterna,
+        // },
         // {
         //   path: "/buscar/:ubicacion",
         //   name: "ubicaciones",
