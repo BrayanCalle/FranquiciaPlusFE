@@ -24,6 +24,11 @@ export default new Router({
           name: "estados",
           component: PaginaInterna,
         },
+        {
+          path: "/buscar/:directorio",
+          name: "directorios",
+          component: PaginaInterna,
+        },
         // {
         //   path: "/buscar/:categoria",
         //   name: "categorias",
