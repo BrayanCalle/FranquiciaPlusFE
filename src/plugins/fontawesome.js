@@ -9,6 +9,10 @@ import {
   faUtensils,
   faTshirt,
   faCapsules,
+  faShoppingCart,
+  faThLarge,
+  faArrowLeft,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -29,6 +33,10 @@ library.add(
   faInstagram,
   faFacebook,
   faYoutube,
+  faShoppingCart,
+  faThLarge,
+  faArrowLeft,
+  faArrowRight,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

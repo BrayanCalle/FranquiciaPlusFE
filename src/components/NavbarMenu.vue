@@ -56,7 +56,10 @@
           <div class="col-7 col-md-6 buscador-container-grande">
             <div class="container-fluid buscador-container mt-2">
               <div class="d-flex justify-content-end">
-                <font-awesome-icon icon="search" class="icon-search" />
+                <font-awesome-icon
+                  icon="search"
+                  class="icon-search me-2 my-auto"
+                />
                 <input
                   class="buscador me-2 my-auto"
                   type="search"

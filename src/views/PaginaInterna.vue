@@ -19,7 +19,7 @@
               >
                 <!-- <i class="fas fa-bars"></i> -->
                 <div class="container-filter-icon">
-                  <img src="assets/img/filtrar.png" alt="" />
+                  <img src="../assets/img/filtrar.png" alt="" />
                   <div>
                     <p>Filtrar</p>
                   </div>
@@ -34,111 +34,76 @@
                 <!--  -->
                 <div class="col-md-3 pe-0 filtrado">
                   <p class="filtrado-multiple-titulos">Buscar otro sector</p>
+                  <!-- Categorías -->
+                  <div class="cuadros-filtros-izquierda mt-2 mb-2">
+                    <select
+                      v-model="categoriaelegida"
+                      name="categorias"
+                      id="categorias"
+                      class="form-select"
+                    >
+                      <option value="" selected>Categorías</option>
+                      <option
+                        v-for="cat in categoria"
+                        :key="cat.id"
+                        :value="cat.nombre"
+                      >
+                        {{ cat.nombre }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <!-- Ubicación -->
+                  <div class="cuadros-filtros-izquierda mt-2 mb-2">
+                    <select
+                      v-model="ubicacionelegida"
+                      name="city"
+                      id="city"
+                      class="form-select"
+                    >
+                      <option value="" selected>Ubicación</option>
+                      <option
+                        v-for="ubi in ubicacion"
+                        :key="ubi.id"
+                        :value="ubi.nombre"
+                      >
+                        {{ ubi.nombre }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <!-- Inversion -->
+                  <div class="cuadros-filtros-izquierda mt-2 mb-2">
+                    <select
+                      v-model="inversionelegida"
+                      name="inversiones"
+                      id="inversiones"
+                      class="form-select"
+                    >
+                      <option value="" selected>Inversión</option>
+                      <option v-for="inv in inversion" :key="inv.id" :value="inv.id">
+                        {{ inv.nombre }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <!-- Boton Filtrar -->
+                  <div class="contenerdor-boton-filtrar mb-1">
+                    <a>
+                      <button
+                        @click="filtrarMarcas"
+                        type="submit"
+                        class="boton-filtrar mt-2 mt-sm-0"
+                      >
+                        Filtrar
+                      </button>
+                    </a>
+                  </div>
+
+
 
                   <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <!-- Acordion item 1 -->
-                    <div class="accordion-item mt-2 mb-2 unidad-acordeon">
-                      <h2
-                        class="accordion-header"
-                        id="panelsStayOpen-headingOne"
-                      >
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseOne"
-                          aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseOne"
-                        >
-                          Categoría
-                        </button>
-                      </h2>
-                      <div
-                        id="panelsStayOpen-collapseOne"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingOne"
-                      >
-                        <div class="accordion-body">
-                          <ul>
-                            <li>Restaurantes</li>
-                            <li>Agencias de Viajes</li>
-                            <li>Agencias Inmobiliarias</li>
-                            <li>Asesoría y Consultoría</li>
-                            <li>Automotriz</li>
-                            <li>Belleza</li>
-                            <li>Restaurantes</li>
-                            <li>Deportes</li>
-                            <li>Distribución y Venta</li>
-                            <li>Enseñanza y Formación</li>
-                            <li>Infantiles</li>
-                            <li>Hogar y Decoración</li>
-                            <li>Hotelería</li>
-                            <li>Informática e Internet</li>
-                            <li>Marketing y Publicidad</li>
-                            <li>Mensajería y Transporte</li>
-                            <li>Moda</li>
-                            <li>Ocio y Tiempo Libre</li>
-                            <li>Papelería</li>
-                            <li>Salud y Bienestar</li>
-                            <li>Seguridad</li>
-                            <li>Servicios de Limpieza</li>
-                            <li>Servicios Especializados</li>
-                            <li>Telecomunicaciones y Telefonía</li>
-                            <li>Tiendas Especializadas</li>
-                            <li>Lavanderías y Tintorerías</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Acordion item 2 -->
-                    <div class="accordion-item mt-2 mb-2 unidad-acordeon">
-                      <h2
-                        class="accordion-header"
-                        id="panelsStayOpen-headingTwo"
-                      >
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseTwo"
-                        >
-                          Ubicación
-                        </button>
-                      </h2>
-                      <div
-                        id="panelsStayOpen-collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo"
-                      >
-                        <div class="accordion-body">
-                          <ul>
-                            <li>Pichincha</li>
-                            <li>Azuay</li>
-                            <li>Bolívar</li>
-                            <li>Cañar</li>
-                            <li>Carchi</li>
-                            <li>Chimborazo</li>
-                            <li>Cotopaxi</li>
-                            <li>El Oro</li>
-                            <li>Esmeraldas</li>
-                            <li>Galápagos</li>
-                            <li>Guayas</li>
-                            <li>Imbabura</li>
-                            <li>Napo</li>
-                            <li>Orellana</li>
-                            <li>Pastaza</li>
-                            <li>Quito</li>
-                            <li>Sucumbíos</li>
-                            <li>Tungurahua</li>
-                            <li>Zamora Chinchipe</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <p class="filtrado-multiple-titulos">Filtrar por:</p>
+                    <p class="filtrado-multiple-titulos">Buscar por:</p>
                     <!-- Acordion item 3 -->
                     <div class="accordion-item mt-2 mb-2 unidad-acordeon">
                       <h2
@@ -163,42 +128,20 @@
                       >
                         <div class="accordion-body">
                           <ul>
-                            <li>Más Vendidas</li>
-                            <li>Nuevas Franquicias</li>
-                            <li>En promoción</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Acordion item 4 -->
-                    <div class="accordion-item mt-2 mb-2 unidad-acordeon">
-                      <h2
-                        class="accordion-header"
-                        id="panelsStayOpen-headingCuatro"
-                      >
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#panelsStayOpen-collapseCuatro"
-                          aria-expanded="false"
-                          aria-controls="panelsStayOpen-collapseCuatro"
-                        >
-                          $9.000 a $15.000
-                        </button>
-                      </h2>
-                      <div
-                        id="panelsStayOpen-collapseCuatro"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingCuatro"
-                      >
-                        <div class="accordion-body">
-                          <ul>
-                            <li>$9.000 a $15.000</li>
-                            <li>$15.000 a $25.000</li>
-                            <li>$25.000 a $50.000</li>
-                            <li>+ de $50.000</li>
+                            <li
+                              v-for="estad in estado"
+                              :key="estad.id"
+                              :value="estad.nombre"
+                            >
+                              <router-link
+                                :to="{
+                                  name: 'estados',
+                                  params: { estado: estad.nombre },
+                                }"
+                              >
+                                {{ estad.nombre }}
+                              </router-link>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -282,7 +225,7 @@
           <!-- boton routerlink -->
 
           <div class="accordion" id="accordionPanelsStayOpenExample">
-            <p class="filtrado-multiple-titulos">Filtrar por:</p>
+            <p class="filtrado-multiple-titulos">Buscar por:</p>
             <!-- Acordion item 3 -->
             <div class="accordion-item mt-2 mb-2 unidad-acordeon">
               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
@@ -401,7 +344,7 @@
         </div>
         <!-- Inicia Paginacion-->
         <div class="d-flex justify-content-end">
-          <div class="col-md-9">
+          <div class="col-12 col-md-9">
             <nav
               aria-label="Page navigation example"
               rol="navegation"
@@ -444,9 +387,7 @@
     </section>
     <!-- ===================== Fin Derecha ======================== -->
     <!-- ============ Inicio sección 3 ============ -->
-    <section class="section-marca-publicidad">
-      
-    </section>
+    <section class="section-marca-publicidad"></section>
     <!-- ============ Fin Sección 3 ============ -->
   </main>
 </template>
@@ -586,19 +527,25 @@ export default {
       this.page = 1;
       this.getMarcas();
     },
-    filtrarMarcasporEstado(){
+    filtrarMarcasporEstado() {
       axios
-        .get("http://127.0.0.1:8000/api/v1/marcas/?estado__nombre=" + this.$route.params.estado)
+        .get(
+          "http://127.0.0.1:8000/api/v1/marcas/?estado__nombre=" +
+            this.$route.params.estado
+        )
         .then((response) => {
-          console.log(response.data.results)
+          console.log(response.data.results);
           this.marcas = response.data.results;
         });
     },
-    filtrarMarcasporDirectorio(){
+    filtrarMarcasporDirectorio() {
       axios
-        .get("http://127.0.0.1:8000/api/v1/marcas/?directorio__nombre=" + this.$route.params.directorio)
+        .get(
+          "http://127.0.0.1:8000/api/v1/marcas/?directorio__nombre=" +
+            this.$route.params.directorio
+        )
         .then((response) => {
-          console.log(response.data.results)
+          console.log(response.data.results);
           this.marcas = response.data.results;
         });
     },
