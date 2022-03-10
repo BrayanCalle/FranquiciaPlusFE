@@ -1,0 +1,736 @@
+.section1-bubblewaffle{
+
+}
+
+.banner1-section1-bubblewaffle,
+.banner2-section1-bubblewaffle,
+.banner3-section1-bubblewaffle,
+.banner4-section1-bubblewaffle{
+    background-color: #f9c524;
+}
+
+.banner1-section1-bubblewaffle div{
+    display: block;
+}
+
+.banner1-section1-bubblewaffle div p{
+    color: #fff;
+    line-height: 1em;
+    font-size: 1.2em;
+    font-family: 'GT Walsheim Pro Regular';
+    text-align:center;
+    padding-bottom: 2em;
+    width: 56%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner1-section1-bubblewaffle > p{
+    padding-top: 1.5em;
+}
+
+.regresar::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    padding-right: 0.3em;
+    content: "\f104";
+}
+
+.banner1-section1-bubblewaffle p a{
+    color: #000;
+    text-decoration: none;
+    padding-left: 2em;
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.banner1-section1-bubblewaffle div .contenedor-imagen-banner1-section1-bubblewaffle{
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+}
+
+/* ============ Banner 2 Imagen grande ==================================== */
+.img-fondo-grande-paginainterna2{
+    width:100%;
+    height:28.625em;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img-fondo-grande-bubblewaffle{
+    background-image: url("../img/Paginasinternas/BubbleWaffle/bubble-waffle-banner.jpg");
+}
+
+.helado-chocolate{
+    position: absolute;
+    /* bottom: 30.5em; */
+    width: 13em;
+    height: 19em;
+    right: 68.8em;
+    top: 14.7em;
+}
+
+.cono{
+    position: absolute;
+    top: 36em;
+    right: 6em;
+    width: 11em;
+    height: 19em;
+}
+/* ============ Fin Banner 2 Imagen grande ==================================== */
+
+/* ============ Banner 3 Video ==================================== */
+.banner3-section1-bubblewaffle{
+    display: flex;
+    justify-content: center;
+}
+
+.video-bubblewaffle{
+    margin: 2.5em 0;
+    border-radius: 2.1875em;
+    /*border: 1px solid #7070;
+    */box-shadow: 4px 21px 21px rgb(0 0 0 / 45%);
+    -webkit-border-radius: 2.1875em;
+    -moz-border-radius: 2.1875em;
+    -ms-border-radius: 2.1875em;
+    -o-border-radius: 2.1875em;
+}
+
+/* ============ Fin Banner 3 Video ==================================== */
+
+/* ============ Banner 4 Promesa-de-valor ============================= */
+    
+    .banner4-section1-bubblewaffle .row{
+        margin-right: 0px;
+    }
+
+    .container-vaso-bubblewaffle{
+        display: flex;
+        justify-content: end;
+    }
+
+    .vaso-bubblewaffle{
+        width: 14em;
+        height: 19.2em;
+        margin-right: 3.4em;
+        margin-top: 1.3em;
+    }
+
+    .container-banner4-texto{
+        padding-top: 5.5em;
+    }
+
+    .banner4-title{
+        font-family: 'GT Walsheim Pro Bold';
+        font-size: 3.5625rem;
+        line-height: 3.4375rem;
+        text-align: left;
+        color: #000;
+    }
+
+    .banner4-subtitle{
+        font-family: 'GT Walsheim Pro Regular';
+        font-size: 1.5625em;
+        line-height: 1.8125em;
+        text-align: left;
+        color: #000;
+    }
+
+/* ============ Fin Banner 4 Promesa-de-valor ========================= */
+/* ========= Section 2 ========= */
+.container-banner2-section2-title,
+.container-banner2-section2-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.container-banner2-section2-title{
+    padding-top: 2em;
+}
+
+.banner2-section2-title{
+    font-family: 'GT Walsheim Pro Bold';
+    font-size: 3.5em;
+    line-height: 3.3125rem;
+    width: 60%;
+    text-align: center;
+    color: #000;
+}
+
+.container-banner2-section2-subtitle{
+    padding-top: 0.5em;
+}
+
+.banner2-section2-subtitle{
+    font-family: 'GT Walsheim Pro Regular';
+    font-size: 1.25em;
+    line-height: 1.875rem;
+    width: 60%;
+    text-align: center;
+    color: #000;
+}
+
+.container-card-comprar-franquicia{
+
+}
+
+.card-comprar-franquicia{
+    background-color: #f9c524;
+    width: 95%;
+    border-radius: 19px;
+}
+
+.container-card-comprar-franquicia,
+.container-img-comprar-franquicia,
+.container-texto-comprar-franquicia,
+.container-cajas-repetitivas-comprar-franquicia{
+    display: flex;
+    justify-content: center;
+}
+
+.cajas-repetitivas-comprar-franquicia{
+    width: 90%;
+}
+
+.container-img-comprar-franquicia img{
+    /* width:15em;
+    height:7.5em; */
+    width: 7em;
+    height: 6.5em;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.container-texto-comprar-franquicia p{
+    text-align: center;
+    font-family: 'GT Walsheim Pro Bold';
+    font-size: 1.5625em;
+    line-height: 1.4375rem;
+    padding-bottom: 1.375rem;
+    padding-top: 0.3125rem;
+    color: #fff;
+}
+
+/* ========= Fin Section 2 ========= */
+/* ========= Section 3 ========= */
+.section3-bubblewaffle{
+    background-image: url(../img/Paginasinternas/fondo-luces.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container-div1-section3-title,
+.container-div1-section3-subtitle,
+.container-div1-section3-subtitle2,
+.container-div1-section3-subtitle3,
+.container-div1-section3-barra,
+.container-div2-section3,
+.subcontainer-div2-section3,
+.container-caja1-div2-section3-title,
+.container-caja1-div2-section3-subtitle,
+.container-caja2-div2-section3-title,
+.container-caja2-div2-section3-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.container-div1-section3-title{
+    padding-top: 5em;
+}
+
+.div1-section3-title{
+    font-family: 'GT Walsheim Pro Bold';
+    font-size: 3.25em;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #fff;
+}
+
+.div1-section3-subtitle{
+    font-family: 'GT Walsheim Pro Medium';
+    font-size: 2.8125em;
+    line-height: 2.75rem;
+    text-align: center;
+    color: #fff;
+}
+
+.container-div1-section3-subtitle2{
+    padding-top: 0.75em;
+}
+
+.div1-section3-subtitle2{
+    font-family: 'GT Walsheim Pro Medium';
+    font-size: 1.875em;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #fff;
+}
+
+.container-div1-section3-subtitle3{
+    margin-top: 1em;
+}
+
+.div1-section3-subtitle3{
+    font-family: 'GT Walsheim Pro Bold';
+    font-style: italic;
+    font-size: 6em;
+    line-height: 5.625rem;
+    text-align: center;
+    color: #fff;
+}
+
+.container-div1-section3-barra{
+    margin-top: 1em;
+}
+
+.div1-section3-barra{
+    width: 50em;
+    height: 0.5em;
+    background: #fff;
+}
+/* ==================  div 2 2 cuadros valor de Franquicia y Adecuación ================== */
+.container-div2-section3{
+    margin-right: 0;
+}
+
+.subcontainer-div2-section3{
+    width: 80%;
+    margin-top: 3em;
+}
+
+.caja1-div2-section3,
+.caja2-div2-section3{
+    width: 27.5em;
+    height: 12.4375em;
+    border-radius: 1.9375em;
+    background: #fff;
+    margin: 0 1em;
+    -webkit-border-radius: 1.9375em;
+    -moz-border-radius: 1.9375em;
+    -ms-border-radius: 1.9375em;
+    -o-border-radius: 1.9375em;
+}
+
+.container-caja1-div2-section3-title,
+.container-caja2-div2-section3-title{
+    height: 50%;
+}
+
+.container-caja1-div2-section3-title{
+    padding-top: 4em;
+}
+
+.container-caja2-div2-section3-title{
+    padding-top: 2em;
+}
+
+.caja1-div2-section3-title,
+.caja1-div2-section3-subtitle,
+.caja2-div2-section3-title,
+.caja2-div2-section3-subtitle{
+    font-family: 'GT Walsheim Pro Bold';
+    text-align: center;
+}
+
+.caja1-div2-section3-title{
+    font-size: 2.25em;
+    line-height: 2rem;
+}
+
+.caja2-div2-section3-title{
+    font-size: 2em;
+    line-height: 2rem;
+}
+
+.caja1-div2-section3-subtitle,
+.caja2-div2-section3-subtitle{
+    font-size: 1.6875em;
+    line-height: 3.75rem;
+}
+
+.caja1-div2-section3-subtitle span,
+.caja2-div2-section3-subtitle span{
+    color: #f9c524;
+    font-size: 2.125em;
+}
+
+/* ==================  div 3 cuadros precios y porcentajes ================== */
+.container-div3-section3{
+    display: flex;
+    justify-content: center;
+}
+
+.subcontainer-div3-section3{
+    width: 90%;
+}
+
+.container-cuadrosrepetitivos-div3-section3{
+    width: 19%;
+    padding: 1.25em 1.25em 0.625em 1.25em;
+    display: inline-block;
+}
+
+.cuadrosrepetitivos-div3-section3-title{
+    height: 30%;
+}
+
+.cajasdeprecio-cuadrosrepetitivos-div3-section3{
+    height: 70%;
+    width: 100%;
+    height: 40px;
+    border-radius: 9px;
+    background: #fff;
+}
+
+.contenedorprecio-cuadrosrepetitivos-div3-section3{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.contenedorprecio-cuadrosrepetitivos-div3-section3 > p,
+.cuadrosrepetitivos-div3-section3-title >p{
+    font-family: 'GT Walsheim Pro Bold';
+    font-style: italic;
+    color: #47505a;
+}
+
+.contenedorprecio-cuadrosrepetitivos-div3-section3 > p{
+    font-size: 1.125em;
+    padding-left: 0.625em;
+}
+
+.cuadrosrepetitivos-div3-section3-title >p{
+    font-size: 1em;
+    padding-left: 0.625em;
+    padding-bottom: 0.3125em;
+}
+
+/* ========= Section 4 Formulario ========= */
+.container-div1-section4-img,
+.container-div1-section4-title,
+.container-div1-section4-subtitle{
+    display: flex;
+    justify-content: center;
+}
+.container-div1-section4-img img{
+    width: 9.375em;
+    height: 9.375em;
+}
+
+.div1-section4-title,
+.div1-section4-subtitle{
+    font-family: 'GT Walsheim Pro Bold';
+    font-size: 35px;
+    text-align: center;
+}
+
+.div1-section4-subtitle{
+    line-height: 85px;
+}
+
+.formulario-pagina-interna2 div div input,
+.formulario-pagina-interna2 div div textarea{
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.acepto-privacidad{
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.container-div2-section4-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.subcontainer-div2-section4-formulario{
+    width: 60%;
+}
+
+.sidebar-box select {
+    display: block;
+    -webkit-appearance: none;
+    height: 2.125em;
+    background-color: #ffffff;
+    background-image: url(../img/flecha-hacia-abajo-para-navegar.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    font-family: 'GT Walsheim Pro Regular';
+    display: inline-block;
+}
+
+/* ======= Checkbox ======= */
+.container-checkbox{
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkbox-JASoft {
+	display: inline-block;
+	position: relative;
+    width: 59px;
+	height: 24px;
+	background: rgb(255, 255, 255);
+	border: 1px solid #f9c524;
+	border-radius: 15px;
+}
+
+.checkbox-JASoft label {
+	/*aspecto*/display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 49px;
+	background: #f9c524;
+	cursor: pointer;
+	/*Posicionamiento*/position: absolute;
+	top: 1px;
+	left: 5px;
+	z-index: 1;
+	/*Comportamiento*/transition: all .4s ease;
+	/*ocultarelposibletextoquetenga*/overflow: hidden;
+	text-indent: 35px;
+	transition: text-indent 0s;
+	-webkit-border-radius: 49px;
+	-moz-border-radius: 49px;
+	-ms-border-radius: 49px;
+	-o-border-radius: 49px;
+}
+
+/* estado activado */
+.checkbox-JASoft input[type=checkbox]:checked + label {
+	left: auto;
+    right: 5px;
+}
+
+.container-btn-enviar-pagina-interna2{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar-pagina-interna2{
+    background-color: #f9c524;
+    color: #fff;
+    padding-left: 2.6875em;
+    padding-right: 2.6875em;
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+
+
+
+/* ===================== Mr Jeff ===================== */
+#mrjeff > .section1-bubblewaffle .banner1-section1-bubblewaffle,
+#mrjeff > .section1-bubblewaffle .banner2-section1-bubblewaffle,
+#mrjeff > .section1-bubblewaffle .banner3-section1-bubblewaffle,
+#mrjeff > .section1-bubblewaffle .banner4-section1-bubblewaffle,
+#mrjeff .card-comprar-franquicia,
+#mrjeff .div1-section3-barra{
+    background-color: #004368;
+}
+
+#mrjeff .banner1-section1-bubblewaffle p a {
+    color: white;
+}
+
+#mrjeff .banner4-title,
+#mrjeff .banner4-subtitle {
+    color: white;
+}
+
+#mrjeff .caja1-div2-section3-subtitle span,
+#mrjeff .caja2-div2-section3-subtitle span,
+#mrjeff .div1-section3-subtitle3{
+    color: #004368;
+}
+
+#mrjeff .container-div1-section4-img img {
+    width: 20.375em;
+    height: 100%;
+}
+
+#mrjeff .checkbox-JASoft {
+    border: 1px solid #004368;
+}
+
+#mrjeff .checkbox-JASoft label{
+    background: #004368;
+}
+
+#mrjeff .btn-enviar-pagina-interna2{
+    background-color: #004368;
+    font-family: 'GT Walsheim Pro Regular';
+}
+
+.img-fondo-grande-mrjeff{
+    background-image: url("../img/Paginasinternas/MrJeff/foto_galeria_mr_jeff_04.png");
+}
+
+/* Media querys */
+
+@media (max-width:576px) {
+    body{
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .banner1-section1-bubblewaffle div p {
+        width: 83%;
+    }
+
+    .cono{
+        display: none;
+    }
+
+    .helado-chocolate{
+        /* width: 15em;
+        height: 15em;
+        right: 24.5em;
+        top: 22.2em; */
+        width: 9.8em;
+        height: 14em;
+        right: 27em;
+        top: 22.5em;
+    }
+
+    .video-bubblewaffle{
+        width: 80%;
+        height: 13.4375rem;
+    }
+
+    .container-vaso-bubblewaffle{
+        display: flex;
+        justify-content: initial;
+    }
+
+    .vaso-bubblewaffle{
+        width: 15em;
+        height: 15em;
+        margin-left: 2.3em;
+    }
+
+    .banner4-title{
+        font-size: 2.1625em;
+        line-height: 1.375rem;
+    }
+
+    .banner2-section2-title{
+        font-size: 2.4em;
+        line-height: 1.8rem;
+        width: 84%;
+    }
+
+    .banner2-section2-subtitle{
+        font-size: 1.5em;
+        line-height: 1.1rem;
+        width: 84%
+    }
+
+    .card-comprar-franquicia{
+        width: 100%;
+    }
+
+    .img-fondo-grande-bubblewaffle{
+        background-image: url("../img/Paginasinternas/BubbleWaffle/bubble-waffle-banner.jpg");
+    }
+
+    /* Sección cuadros de color amarillo */
+    .container-card-comprar-franquicia {
+        padding: 0 0.5em;
+    }
+
+    /* Sección 3 */
+    .section3-bubblewaffle{
+        background-position-x: -76.8em;
+        background-size: 510% 160%;
+    }
+
+    .div1-section3-title{
+        font-size: 2.7em;
+    }
+
+    .div1-section3-subtitle{
+        font-size: 3.8125em;
+        line-height: 0.5rem;
+    }
+
+    .container-div1-section3-subtitle2{
+        padding-top: 3em;
+    }
+
+    .container-div1-section3-subtitle3{
+        margin-top: 0em;
+    }
+
+    .div1-section3-subtitle2{
+        font-size: 2.5em;
+    }
+
+    .div1-section3-subtitle3{
+        color: #f9c524;
+        font-size: 5em;
+        line-height: 4.625rem;
+    }
+
+    .div1-section3-barra{
+        background: #f9c524;
+    }
+
+    .container-div1-section3-title {
+        padding-top: 9.5em;
+    }
+    
+    .subcontainer-div2-section3 {
+        width: 90%;
+    }
+
+    .container-caja1-div2-section3-title{
+        padding-top: 3em;
+    }
+
+    .caja1-div2-section3,
+    .caja2-div2-section3{
+        width: 29.5em;
+        height: 14.4375em;
+    }
+
+    .caja1-div2-section3-title {
+        font-size: 2.5em;
+    }
+
+    .caja1-div2-section3-subtitle,
+    .caja2-div2-section3-subtitle{
+        font-size: 2em;
+    }
+
+    .caja1-div2-section3-subtitle span,
+    .caja2-div2-section3-subtitle span{
+        font-size: 1.65em;
+    }
+
+    .caja2-div2-section3-title{
+        font-size: 2.5em;
+        line-height: 1.5rem;
+    }
+
+    .container-cuadrosrepetitivos-div3-section3 {
+        width: 48%;
+        padding: 1.25em 0.5em 0.625em 1.25em;
+    }
+
+    .subcontainer-div3-section3 {
+        width: 98%;
+    }
+
+    /* Sección 4 Formulario */
+    .subcontainer-div2-section4-formulario {
+        width: 80%;
+    }
+
+}

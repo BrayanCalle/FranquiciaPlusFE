@@ -56,6 +56,7 @@
               data-wow-delay="0.2s"
             >
               <ul
+                
                 class="
                   portfolio-filter
                   grid-filter
@@ -70,19 +71,19 @@
                   container-licategory
                 "
               >
-                <li class="nav active">
+                <li id="test" class="nav active activee opcion">
                   <font-awesome-icon icon="th-large" />
                   <label class="border-0" for="Todo">Todo</label>
                 </li>
-                <li class="nav nav-restaurante">
+                <li class="nav nav-restaurante opcion">
                   <font-awesome-icon icon="utensils" />
                   <label class="border-0" for="Restaurante">Restaurante</label>
                 </li>
-                <li class="nav nav-moda mb-2 mb-sm-0">
+                <li class="nav nav-moda mb-2 mb-sm-0 opcion">
                   <font-awesome-icon icon="tshirt" />
                   <label class="border-0" for="Moda">Moda</label>
                 </li>
-                <li class="nav">
+                <li class="nav opcion">
                   <font-awesome-icon icon="shopping-cart" />
                   <label class="border-0" for="Supermercado"
                     >Supermercado</label
@@ -594,12 +595,12 @@ export default {
     this.getMarcasPromocion();
   },
   methods: {
-    mouseover: function () {
-      this.image = require("../assets/img/fotos-franquicia-25.png");
-    },
-    mouseleave: function () {
-      this.image = require("../assets/img/logos-02.png");
-    },
+    // mouseover: function () {
+    //   this.image = require("../assets/img/fotos-franquicia-25.png");
+    // },
+    // mouseleave: function () {
+    //   this.image = require("../assets/img/logos-02.png");
+    // },
     getMarcasPromocion() {
       axios
         .get("http://127.0.0.1:8000/api/v1/marcas/?estado__nombre=Promoción")
@@ -623,6 +624,10 @@ export default {
 }
 
 body{background-color: #ffffff} */
+
+.activee{
+  color: #fa5e4d;
+}
 
 #slider img {
   display: block;

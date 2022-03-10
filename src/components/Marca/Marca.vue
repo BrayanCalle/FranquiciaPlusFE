@@ -52,7 +52,7 @@
           <small>{{ marca.categoria.nombre }}</small>
         </div>
         <div class="col-4 d-inline-block ps-2 ps-sm-4">
-          <a :href="marca.nombre">
+          <a :href="'/marcas/'+ marca.urlmarca">
             <button type="button" class="btn-consultar colorfondo-principal">
               Consultar
             </button>

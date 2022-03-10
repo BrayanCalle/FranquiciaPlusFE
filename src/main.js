@@ -8,6 +8,8 @@ import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
+// import '@/assets/js/cambiarcolor.js'
+// import '@/assets/js/slider.js'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 require("./plugins/fontawesome");
