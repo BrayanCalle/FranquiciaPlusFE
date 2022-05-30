@@ -25,7 +25,7 @@
           </div>
         </div>
         <!-- Inicio Cajas Repetitivas -->
-        <div class="row cajasrepetitiva-row">
+        <div class="row cajasrepetitiva-row justify-content-center flex-column">
           <div class="container-post">
             <input
               type="radio"
@@ -36,11 +36,11 @@
             />
             <input
               type="radio"
-              id="Restaurante"
+              id="Restaurantes"
               name="categories"
-              value="Restaurante"
+              value="Restaurantes"
             />
-            <input type="radio" id="Moda" name="categories" value="Moda" />
+            <input type="radio" id="Farmacias" name="categories" value="Farmacias" />
             <input
               type="radio"
               id="Supermercado"
@@ -77,11 +77,11 @@
                 </li>
                 <li class="nav nav-restaurante opcion">
                   <font-awesome-icon icon="utensils" />
-                  <label class="border-0" for="Restaurante">Restaurante</label>
+                  <label class="border-0" for="Restaurantes">Restaurante</label>
                 </li>
                 <li class="nav nav-moda mb-2 mb-sm-0 opcion">
-                  <font-awesome-icon icon="tshirt" />
-                  <label class="border-0" for="Moda">Moda</label>
+                  <font-awesome-icon icon="capsules" />
+                  <label class="border-0" for="Farmacias">Farmacias</label>
                 </li>
                 <li class="nav opcion">
                   <font-awesome-icon icon="shopping-cart" />
@@ -94,7 +94,7 @@
             <hr />
 
             <div class="posts row mt-5 mb-5">
-              <marcapromocion
+              <marca-promocion
                 v-for="marca in marcas"
                 v-bind:key="marca.id"
                 v-bind:marca="marca"
@@ -575,7 +575,7 @@
 import BannerHome from "@/components/Home/BannerHome";
 import OportunidadesNuevas from "@/components/Home/OportunidadesNuevas";
 
-import Marcapromocion from "@/components/Marca/MarcaPromocion";
+import MarcaPromocion from "@/components/Marca/MarcaPromocion";
 import axios from "axios";
 
 export default {
@@ -583,7 +583,7 @@ export default {
   components: {
     BannerHome,
     OportunidadesNuevas,
-    Marcapromocion,
+    MarcaPromocion,
   },
   data() {
     return {

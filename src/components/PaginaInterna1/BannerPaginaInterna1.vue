@@ -9,7 +9,7 @@
           </h4>
           <p data-aos="fade-right" data-aos-delay="100">hasta + de $50.000</p>
         </div>
-        <div>
+        <div class="w-100">
           <img src="@/assets/img/png2.png" alt="" class="d-block" />
         </div>
       </div>

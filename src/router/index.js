@@ -15,20 +15,56 @@ export default new Router({
       component: Home,
     },
     {
-      path: "/buscar",
+      path: "/franquicia-en-ecuador",
       name: "paginainterna",
       component: PaginaInterna,
       children:[
         {
-          path: "/buscar/:estado",
+          path: "/franquicia-en-ecuador/:estado",
           name: "estados",
           component: PaginaInterna,
         },
         {
-          path: "/buscar/:directorio",
+          path: "/franquicia-en-ecuador/:directorio",
           name: "directorios",
           component: PaginaInterna,
         },
+        {
+          path: "/franquicia-en-ecuador/:categoria/:ubicacion/:inversion",
+          name: "tresfiltros",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:categoria/:ubicacion",
+          name: "categoriayubicacion",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:categoria/:inversion",
+          name: "categoriayinversion",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:ubicacion/:inversion",
+          name: "ubicacionyinversion",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:categoria",
+          name: "categorias",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:ubicacion",
+          name: "ubicaciones",
+          component: PaginaInterna,
+        },
+        {
+          path: "/franquicia-en-ecuador/:inversion",
+          name: "inversiones",
+          component: PaginaInterna,
+        },
+
         // {
         //   path: "/buscar/:categoria",
         //   name: "categorias",

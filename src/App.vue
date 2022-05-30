@@ -1,6 +1,6 @@
 <template>
   <main>
-    <NavbarMenu />
+    <navbar-menu />
 
     <router-view />
     <Footer />

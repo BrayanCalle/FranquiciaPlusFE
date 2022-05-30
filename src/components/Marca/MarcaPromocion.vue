@@ -2,7 +2,7 @@
   <!-- Primer Cuadro -->
   <div
     class="post col-lg-4 col-md-6 col-sm-6 col-6 contenedor-padding mb-5"
-    data-category="Restaurante"
+    :data-category="marca.categoria.nombre"
   >
     <div class="card h-100 contenedor-marcas">
       <div v-if="hover">
@@ -10,7 +10,7 @@
           type="button"
           class="btn-popular colorfondo-principal mt-3 ms-3"
         >
-          Popular
+          {{marca.estado.nombre}}
         </button>
         <img
           v-bind:src="marca.imagenlocal"
@@ -25,7 +25,7 @@
           type="button"
           class="btn-popular colorfondo-principal mt-3 ms-3"
         >
-          Popular
+          {{marca.estado.nombre}}
         </button>
         <img
           v-bind:src="marca.imagenmarca"

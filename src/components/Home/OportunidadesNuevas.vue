@@ -14,13 +14,15 @@
 
       <!--  -->
       <div class="row oportunidadesposts-row oportunidades-posts mt-5 mb-5">
-        <marcanueva
+        <marca-nueva
           v-for="marca in marcasnuevas"
           v-bind:key="marca.id"
           v-bind:marca="marca"
         />
 
         <!-- Fin ultimo cuadro -->
+      </div>
+    </div>
         <div class="container-btn-buscarmascategorias">
           <a href="#cajabotones">
             <button
@@ -31,18 +33,16 @@
             </button>
           </a>
         </div>
-      </div>
-    </div>
   </section>
   <!-- Fin Sección Oportunidades de nuevo negocio -->
 </template>
 
 <script>
-import Marcanueva from "@/components/Marca/MarcaNueva";
+import MarcaNueva from "@/components/Marca/MarcaNueva";
 import axios from "axios";
 export default {
   components: {
-    Marcanueva,
+    MarcaNueva,
   },
   data() {
     return {

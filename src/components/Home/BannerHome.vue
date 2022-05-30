@@ -19,7 +19,7 @@
           </div>
         </div>
         <!-- <div class="container-portada-index"> -->
-        <picture class="container-portada-index">
+        <picture class="container-portada-index w-100">
           <source
             srcset="../../assets/img/webp/portada.webp"
             type="image/webp"
@@ -103,7 +103,7 @@
               </a>
             </div>
             <div class="contenedor-boton">
-              <a href="/buscar">
+              <a href="/franquicia-en-ecuador">
                 <button type="button" class="boton-xs mt-2 mt-lg-0">
                   Buscar
                 </button>
@@ -179,7 +179,7 @@ export default {
         ubicacionelegida1 == "" &&
         inversionelegida1 == ""
       ) {
-        window.location.href = "/buscar/" + categoriaelegida1;
+        window.location.href = "/franquicia-en-ecuador/" + categoriaelegida1;
       }
       // Solo se eligio ubicacion y el resto no
       else if (
@@ -187,7 +187,7 @@ export default {
         categoriaelegida1 == "" &&
         inversionelegida1 == ""
       ) {
-        window.location.href = "/buscar" + "?ubicacion=" + ubicacionelegida1;
+        window.location.href = "/franquicia-en-ecuador" + "?ubicacion=" + ubicacionelegida1;
       }
       // solo se eligio inversion y el resto no
       else if (
@@ -195,7 +195,7 @@ export default {
         ubicacionelegida1 == "" &&
         categoriaelegida1 == ""
       ) {
-        window.location.href = "/buscar/" + "&inversion=" + inversionelegida1;
+        window.location.href = "/franquicia-en-ecuador/" + "&inversion=" + inversionelegida1;
       }
       // se elgio categoria y ubicacion pero no se eligio inversion
       else if (
@@ -204,7 +204,7 @@ export default {
         inversionelegida1 == ""
       ) {
         window.location.href =
-          "/buscar/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1;
+          "/franquicia-en-ecuador/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1;
       }
       // se eligio categoria y inversion pero no se eligio ubicacion
       else if (
@@ -213,7 +213,7 @@ export default {
         ubicacionelegida1 == ""
       ) {
         window.location.href =
-          "/buscar/" + categoriaelegida1 + "?&inversion=" + inversionelegida1;
+          "/franquicia-en-ecuador/" + categoriaelegida1 + "?&inversion=" + inversionelegida1;
       }
       // se eligio ubicacion y inversion pero no categoria
       else if (
@@ -222,7 +222,7 @@ export default {
         inversionelegida1 != ""
       ) {
         window.location.href =
-          "/buscar/" + "?&ubicacion=" + ubicacionelegida1 + "?&inversion=" + inversionelegida1;
+          "/franquicia-en-ecuador/" + "?&ubicacion=" + ubicacionelegida1 + "?&inversion=" + inversionelegida1;
       }
       // se eligieron Todas
       else if (
@@ -231,8 +231,8 @@ export default {
         ubicacionelegida1 != ""
       ) {
         window.location.href =
-          "/buscar/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1 + "&inversion=" + inversionelegida1;
-      } else window.location.href = "/buscar/";
+          "/franquicia-en-ecuador/" + categoriaelegida1 + "?&ubicacion=" + ubicacionelegida1 + "&inversion=" + inversionelegida1;
+      } else window.location.href = "/franquicia-en-ecuador/";
     },
   },
   created() {

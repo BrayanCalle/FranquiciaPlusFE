@@ -81,7 +81,11 @@
                       class="form-select"
                     >
                       <option value="" selected>Inversión</option>
-                      <option v-for="inv in inversion" :key="inv.id" :value="inv.id">
+                      <option
+                        v-for="inv in inversion"
+                        :key="inv.id"
+                        :value="inv.id"
+                      >
                         {{ inv.nombre }}
                       </option>
                     </select>
@@ -99,8 +103,6 @@
                       </button>
                     </a>
                   </div>
-
-
 
                   <div class="accordion" id="accordionPanelsStayOpenExample">
                     <p class="filtrado-multiple-titulos">Buscar por:</p>
@@ -205,7 +207,11 @@
               class="form-select"
             >
               <option value="" selected>Inversión</option>
-              <option v-for="inv in inversion" :key="inv.id" :value="inv.id">
+              <option 
+                v-for="inv in inversion" 
+                :key="inv.id" 
+                :value="inv.id"
+              >
                 {{ inv.nombre }}
               </option>
             </select>
@@ -240,6 +246,35 @@
                   Todas
                 </button>
               </h2>
+
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li
+                      v-for="cat in categoria"
+                      :key="cat.id"
+                      :value="cat.nombre"
+                    >
+                      <router-link
+                        :to="{
+                          name: 'categorias',
+                          params: { categoria: cat.nombre },
+                        }"
+                      >
+                        {{ cat.nombre }}
+                      </router-link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
               <div
                 id="panelsStayOpen-collapseThree"
                 class="accordion-collapse collapse"
@@ -341,9 +376,8 @@
               v-bind:marca="marca"
             />
           </div>
-        </div>
         <!-- Inicia Paginacion-->
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-center">
           <div class="col-12 col-md-9">
             <nav
               aria-label="Page navigation example"
@@ -383,6 +417,7 @@
           </div>
         </div>
         <!-- Fin Paginacion-->
+        </div>
       </div>
     </section>
     <!-- ===================== Fin Derecha ======================== -->
@@ -437,6 +472,9 @@ export default {
     "$route.params.directorio": function () {
       this.filtrarMarcasporDirectorio();
     },
+    "$route.params.categoria": function () {
+      this.filtrarMarcasporCategoria();
+    },
   },
   created() {
     this.getMarcas();
@@ -446,6 +484,11 @@ export default {
     this.getEstado();
     this.getDirectorio();
   },
+  // watch:{
+  //   '$route.params.categoria': function (){
+  //     this.filtrarMarcas()
+  //   }
+  // },
   methods: {
     getMarcas() {
       const params = {
@@ -549,11 +592,44 @@ export default {
           this.marcas = response.data.results;
         });
     },
+    filtrarMarcasporCategoria(){
+      axios
+        .get(
+          "http://127.0.0.1:8000/api/v1/marcas/?categoria__nombre=" +
+            this.$route.params.categoria
+        )
+        .then((response) => {
+          console.log(response.data.results);
+          this.marcas = response.data.results;
+        });
+    },
     filtrarMarcas() {
       let categoriaelegida1 = this.categoriaelegida;
       let ubicacionelegida1 = this.ubicacionelegida;
       let inversionelegida1 = this.inversionelegida;
       let filtros = " ";
+      // window.location.href = "/franquicia-en-ecuador/"
+
+      // Empieza prueba
+      // if (this.$route.params.categoria) {
+      //    filtros = "categoria__nombre=" + this.$route.params.categoria;
+      // }
+      // if (this.$route.query.ubicacion) {
+      //   filtros = filtros + "&ubicacion__nombre=" + this.$route.query.ubicacion;
+      // }
+      // if (this.$route.query.inversion) {
+      //   filtros = filtros + "&inversion=" + this.$route.query.inversion;
+      // }
+
+      // console.log(filtros);
+      // apiMarcas.filtrarMarcas(filtros).then((response) => {
+      //   this.marcas = response.data.results;
+      // });
+      // Termina prueba
+
+
+
+      // Comienza boton filtrar
       if (categoriaelegida1 != "") {
         filtros = "categoria__nombre=" + categoriaelegida1;
       }
@@ -564,10 +640,15 @@ export default {
         filtros = filtros + "&inversion=" + inversionelegida1;
       }
 
+
       console.log(filtros);
       apiMarcas.filtrarMarcas(filtros).then((response) => {
         this.marcas = response.data.results;
       });
+      // Termina
+
+    
+
 
       // Otro metodo
 
@@ -601,8 +682,12 @@ export default {
       // });
     },
   },
+
+
+
   beforeMount() {
     // this.filtrarMarcas();
+    // this.filtrarMarcasporCategoria();
     // this.filtrarMarcasporEstado();
   },
 };

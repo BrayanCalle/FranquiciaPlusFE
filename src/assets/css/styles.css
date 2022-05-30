@@ -730,10 +730,10 @@ input[type="radio"] {
   display: block;
 }
 
-[value="Restaurante"]:checked
+[value="Restaurantes"]:checked
   ~ .posts
-  .post:not([data-category~="Restaurante"]),
-[value="Moda"]:checked ~ .posts .post:not([data-category~="Moda"]),
+  .post:not([data-category~="Restaurantes"]),
+[value="Farmacias"]:checked ~ .posts .post:not([data-category~="Farmacias"]),
 [value="Supermercado"]:checked
   ~ .posts
   .post:not([data-category~="Supermercado"]) {
@@ -741,8 +741,8 @@ input[type="radio"] {
 }
 
 [value="Todo"]:checked ~ .container-category [for="Todo"],
-[value="Restaurante"]:checked ~ .container-category [for="Restaurante"],
-[value="Moda"]:checked ~ .container-category [for="Moda"],
+[value="Restaurantes"]:checked ~ .container-category [for="Restaurantes"],
+[value="Farmacias"]:checked ~ .container-category [for="Farmacias"],
 [value="Supermercado"]:checked ~ .container-category [for="Supermercado"] {
   color: #fa5e4d;
 }

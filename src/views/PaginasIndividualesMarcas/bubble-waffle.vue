@@ -90,59 +90,84 @@
       <!-- ================== Slider ================== -->
       <div class="banner1-section2-bubblewaffle">
         <div class="wrapper">
-          <div class="carousel owl-carousel owl-theme">
-            <div class="card-slide card-1">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-4.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
-            <div class="card-slide card-2">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-6.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
-            <div class="card-slide card-3">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-5.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
-            <div class="card-slide card-4">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-4.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
-            <div class="card-slide card-5">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-6.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
-            <div class="card-slide card-6">
-              <img
-                src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-5.jpg"
-                width="366px"
-                height="250px"
-                alt=""
-              />
-            </div>
+          <div class="carousel">
+            <ul class="control" id="custom-control">
+                <li class="prev">
+                <font-awesome-icon icon="arrow-left"/>
+                
+                </li>
+                <li class="next">
+                <font-awesome-icon icon="arrow-right" />
+                </li>
+            </ul>
+            <tiny-slider>
+              <div class="slider-item">
+                <div class="card-slide card-1">
+                  <img
+                    src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-4.jpg"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card-slide card-2">
+                  <img
+                    src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-6.jpg"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card-slide card-3">
+                  <img
+                    src="../../assets/img/Paginasinternas/BubbleWaffle/bubble-5.jpg"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card-slide card-4">
+                  <img
+                    src="../../assets/img/repartidor.png"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card-slide card-5">
+                  <img
+                    src="../../assets/img/repartidor-2.png"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="card-slide card-6">
+                  <img
+                    src="../../assets/img/repartidor3.png"
+                    width="366px"
+                    height="250px"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </tiny-slider>
           </div>
         </div>
       </div>
       <!-- ================== Fin Slider ================== -->
+
+
       <!-- ================== Por que deberia comprar una Franquicia ================== -->
       <div class="banner2-section2-bubblewaffle h-100">
         <div class="container-banner2-section2-title">
@@ -167,7 +192,7 @@
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
                   <img
-                    src="assets/img/Paginasinternas/rentabilidad.png"
+                    src="../../assets/img/Paginasinternas/rentabilidad.png"
                     alt=""
                   />
                 </div>
@@ -187,7 +212,10 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/negocio.png" alt="" />
+                  <img
+                    src="../../assets/img/Paginasinternas/negocio.png"
+                    alt=""
+                  />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -205,7 +233,10 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/posiciona.png" alt="" />
+                  <img
+                    src="../../assets/img/Paginasinternas/posiciona.png"
+                    alt=""
+                  />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -223,7 +254,7 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/zona.png" alt="" />
+                  <img src="../../assets/img/Paginasinternas/zona.png" alt="" />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -241,7 +272,10 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/ubica.png" alt="" />
+                  <img
+                    src="../../assets/img/Paginasinternas/ubica.png"
+                    alt=""
+                  />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -259,7 +293,7 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/know.png" alt="" />
+                  <img src="../../assets/img/Paginasinternas/know.png" alt="" />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -277,7 +311,10 @@
             >
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
-                  <img src="assets/img/Paginasinternas/formacion.png" alt="" />
+                  <img
+                    src="../../assets/img/Paginasinternas/formacion.png"
+                    alt=""
+                  />
                 </div>
                 <div class="container-texto-comprar-franquicia">
                   <p>
@@ -296,7 +333,7 @@
               <div class="card-comprar-franquicia">
                 <div class="container-img-comprar-franquicia">
                   <img
-                    src="assets/img/Paginasinternas/megafonopubli.png"
+                    src="../../assets/img/Paginasinternas/megafonopubli.png"
                     alt=""
                   />
                 </div>
@@ -313,12 +350,19 @@
       </div>
       <!-- ================== Fin Por que deberia comprar una Franquicia ================== -->
     </section>
+
+
   </main>
 </template>
 
 <script>
+import TinySlider from '@/components/PaginaInterna2/TinySlider.vue'
+
 export default {
   name: "BubbleWaffle",
+  components: {
+    TinySlider,
+  }
   // mounted() {
   //   let externalScript = document.createElement('script')
   //   externalScript.setAttribute('src', '../../assets/js/slider.js')
@@ -331,5 +375,46 @@ export default {
 @import "../../assets/css/paginaintera-2.css";
 /* @import "../../assets/css/slider.css"; */
 /* @import "../../assets/css/owl.carousel.min.css"; */
+
+.control {
+  list-style: none;
+}
+.control li {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.control li:hover {
+  background: #000;
+}
+.control li.prev {
+  left: 20px;
+}
+.control li.next {
+  right: 20px;
+}
+
+.tns-nav {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tns-nav button {
+  height: 13px;
+  width: 8px;
+  background-color: #a5a5a5;
+  border: none;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+.tns-nav .tns-nav-active {
+  background-color: black;
+}
 
 </style>

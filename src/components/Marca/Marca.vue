@@ -2,6 +2,18 @@
   <!-- Primer Cuadro -->
   <div class="d-inline-block mb-5 col-6 col-lg-4">
     <div class="card h-100 contenedor-marcas">
+      <div v-if="(marca.estado != null)">
+        <button
+          type="button"
+          class="btn-popular colorfondo-principal mt-3 ms-3"
+        >
+          {{marca.estado.nombre}}
+        </button>
+      </div>
+      <div v-else>
+
+      </div>
+      
       <div v-if="hover">
         <img
           v-bind:src="marca.imagenlocal"
