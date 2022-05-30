@@ -36,20 +36,11 @@
         <img v-bind:src="marca.imagenlogo" alt="" />
       </div>
       <div class="card-body">
-        <div class="col-md-12">
+        <div class="col-8 col-md-7 d-inline-block">
           <h5 class="card-title titulo-card">{{ marca.nombre }}</h5>
         </div>
-        <div class="col-8 col-md-7 pb-3 estrellas d-inline-block">
-          <p>
-            <font-awesome-icon icon="star" />
-            <font-awesome-icon icon="star" />
-            <font-awesome-icon icon="star" />
-            <font-awesome-icon icon="star" />
-            <font-awesome-icon icon="star" />
-          </p>
-        </div>
-        <div class="d-inline-block pl-precio-pag1">
-          <p class="color-principal tipo-letra">{{ marca.precio | dollar }}</p>
+        <div class="col-md-4 d-inline-block">
+          <p class="color-principal tipo-letra d-flex justify-content-end">{{ marca.precio | dollar }}</p>
         </div>
         <p class="card-text color-parrafos tipo-letra cuerpo-card">
           {{ marca.descripcion }}
@@ -64,7 +55,7 @@
           <small>{{ marca.categoria.nombre }}</small>
         </div>
         <div class="col-4 d-inline-block ps-2 ps-sm-4">
-          <a :href="'/marcas/'+ marca.urlmarca">
+          <a class="d-flex justify-content-end" :href="'/marcas/'+ marca.urlmarca">
             <button type="button" class="btn-consultar colorfondo-principal">
               Consultar
             </button>

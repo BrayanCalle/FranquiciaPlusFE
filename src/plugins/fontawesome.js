@@ -13,6 +13,8 @@ import {
   faThLarge,
   faArrowLeft,
   faArrowRight,
+  faAngleLeft,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -37,6 +39,8 @@ library.add(
   faThLarge,
   faArrowLeft,
   faArrowRight,
+  faAngleLeft,
+  faAngleRight,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

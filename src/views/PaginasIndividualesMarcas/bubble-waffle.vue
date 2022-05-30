@@ -93,11 +93,11 @@
           <div class="carousel">
             <ul class="control" id="custom-control">
                 <li class="prev">
-                <font-awesome-icon icon="arrow-left"/>
+                <font-awesome-icon icon="angle-left"/>
                 
                 </li>
                 <li class="next">
-                <font-awesome-icon icon="arrow-right" />
+                <font-awesome-icon icon="angle-right" />
                 </li>
             </ul>
             <tiny-slider>
@@ -351,6 +351,299 @@
       <!-- ================== Fin Por que deberia comprar una Franquicia ================== -->
     </section>
 
+    <!-- ========= Section 3 ========= -->
+        <section class="h-100 section3-bubblewaffle">
+            <div class="container-div1-section3-title mb-3">
+                <p class="div1-section3-title">
+                    Empieza tu negocio desde
+                </p>
+            </div>
+            <div class="container-div1-section3-subtitle">
+                <p class="div1-section3-subtitle">
+                    $15.000
+                </p>
+            </div>
+            <div class="container-div1-section3-subtitle2">
+                <p class="div1-section3-subtitle2">
+                    Con ganancias aproximadas <br> mensuales desde 
+                </p>
+            </div>
+            <div class="container-div1-section3-subtitle3">
+                <p class="div1-section3-subtitle3">
+                    $4.000
+                </p>
+            </div>
+            <div class="container-div1-section3-barra">
+                <div class="div1-section3-barra">
+                </div>
+            </div>
+            <!-- ==================  div 2 2 cuadros valor de Franquicia y Adecuación ==================  -->
+            <div class="container-div2-section3 ">
+                <div class="row subcontainer-div2-section3">
+                    <div class="col-md-6 caja1-div2-section3 mb-3">
+                        <div class="container-caja1-div2-section3-title">
+                            <p class="caja1-div2-section3-title">
+                                Valor de Franquicia
+                            </p>
+                        </div>
+                        <div class="container-caja1-div2-section3-subtitle">
+                            <p class="caja1-div2-section3-subtitle">
+                                Desde <span>$15.000</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 caja2-div2-section3">
+                        <div class="container-caja2-div2-section3-title">
+                            <p class="caja2-div2-section3-title">
+                                Adecuación Aprox. <br> del Local
+                            </p>
+                        </div>
+                        <div class="container-caja2-div2-section3-subtitle">
+                            <p class="caja2-div2-section3-subtitle">
+                                Desde <span>$12.000</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ==================  div 3 cuadros precios y porcentajes ==================  -->
+            <div class="container-div3-section3 mt-3 pb-5">
+                <div class="subcontainer-div3-section3"> 
+                    <!-- Cuadro 1 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Canon de entrada</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>$25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 2 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Royalty</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>4%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 3 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Canon de publicidad</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>0%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 4 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Duración contrato</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>5 años</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 5 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>¿Es prorrogable?</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>Si</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 6 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Metros local</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>55 m2 mínimo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 7 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>¿Se ofrece formación ?</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>Si</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 8 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Población mínima</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>350.000 habitantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 9 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>¿Ayuda financiera?</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>Si</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                    <!-- Cuadro 10 -->
+                    <div class="container-cuadrosrepetitivos-div3-section3">
+                        <!-- 30% para los textos ejemplo royalty -->
+                        <div class="cuadrosrepetitivos-div3-section3-title">
+                            <p>Franquicias en Ecuador</p>
+                        </div>
+                        <!-- 70% sera la caja que contendra al precio y porcentajes -->
+                        <div class="cajasdeprecio-cuadrosrepetitivos-div3-section3">
+                            <div class="contenedorprecio-cuadrosrepetitivos-div3-section3">
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Cuadro -->
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- ========= Section 4 Formulario ========= -->
+        <section class="h-100 section4-bubblewaffle">
+            <div class="container-div1-section4-img pt-4">
+                <img src="../../assets/img/images-removebg-preview.png" alt="" data-aos="fade-down">
+            </div>
+            <div class="container-div1-section4-title">
+                <p class="div1-section4-title" data-aos="fade-down" data-aos-delay="100">Comienza tu propio negocio</p>
+            </div>
+            <div class="container-div1-section4-subtitle">
+                <p class="div1-section4-subtitle" data-aos="fade-down" data-aos-delay="200">CONTÁCTANOS</p>
+            </div>
+            <!-- ========= div 2 Formulario =========  -->
+            <div class="container-div2-section4-formulario">
+                <div class="subcontainer-div2-section4-formulario">
+                    <form class="formulario-pagina-interna2">
+                        <div class="row">
+                            <div class="form-group col-md-6 pt-3">
+                                <input type="text" class="form-control" id="" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group col-md-6 pt-3">
+                                <input type="text" class="form-control" id="" placeholder="Apellido" required>
+                            </div>
+                            <div class="sidebar-box form-group col-md-6 pt-3">
+                                <select class="form-control" id="presupuestodeinversion">
+                                  <option disabled selected>Presupuesto de Inversión</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                            <div class="sidebar-box form-group col-md-6 pt-3">
+                                <select class="form-control" id="pais-interes" >
+                                    <option value disabled selected>País de Interes</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                </select>
+                            </div>
+                            <div class="sidebar-box form-group col-md-6 pt-3">
+                                <select class="form-control" id="ciudad-interes" >
+                                    <option value disabled selected>Ciudad de Interés</option>
+                                    <option value="Pichincha">Pichincha</option>
+                                    <option value="Azuay">Azuay</option>
+                                    <option value="Bolívar">Bolívar</option>
+                                    <option value="Cañar">Cañar</option>
+                                    <option value="Carchi">Carchi</option>
+                                    <option value="Chimborazo">Chimborazo</option>
+                                    <option value="Cotopaxi">Cotopaxi</option>
+                                    <option value="El-Oro">El Oro</option>
+                                    <option value="Esmeraldas">Esmeraldas</option>
+                                    <option value="Galápagos">Galápagos</option>
+                                    <option value="Guayas">Guayas</option>
+                                    <option value="Imbabura">Imbabura</option>
+                                    <option value="Napo">Napo</option>
+                                    <option value="Orellana">Orellana</option>
+                                    <option value="Pastaza">Pastaza</option>
+                                    <option value="Quito">Quito</option>
+                                    <option value="Sucumbios">Sucumbíos</option>
+                                    <option value="Tungurahua">Tungurahua</option>
+                                    <option value="Zamora-Chinchipe">Zamora Chinchipe</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6 pt-3">
+                                <input type="tel" class="form-control" id="" placeholder="Teléfono celular">
+                            </div>
+                            <div class="form-group pt-3">
+                                <input type="email" class="form-control" id="InputEmail1" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group pt-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comentarios" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group pt-4 container-checkbox">
+                            <div class="form-check checkbox-JASoft">
+                                <input class="form-check-input" type="checkbox" id="checkAvanzado" required>
+                                <label class="form-check-label" for="checkAvanzado">
+                                Check
+                                </label>
+                            </div>
+                            <p class="pt-lg-1 pt-2 ps-1 acepto-privacidad">Acepto el aviso de Privacidad</p>
+                        </div>
+                        <div class="container-btn-enviar-pagina-interna2 pt-4 pb-5">
+                            <button type="submit" class="btn btn-enviar-pagina-interna2">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
 
   </main>
 </template>
@@ -415,6 +708,12 @@ export default {
 }
 .tns-nav .tns-nav-active {
   background-color: black;
+}
+
+.carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
 }
 
 </style>
