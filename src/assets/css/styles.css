@@ -734,16 +734,16 @@ input[type="radio"] {
   ~ .posts
   .post:not([data-category~="Restaurantes"]),
 [value="Farmacias"]:checked ~ .posts .post:not([data-category~="Farmacias"]),
-[value="Supermercado"]:checked
+[value="Servicios"]:checked
   ~ .posts
-  .post:not([data-category~="Supermercado"]) {
+  .post:not([data-category~="Servicios"]) {
   display: none;
 }
 
 [value="Todo"]:checked ~ .container-category [for="Todo"],
 [value="Restaurantes"]:checked ~ .container-category [for="Restaurantes"],
 [value="Farmacias"]:checked ~ .container-category [for="Farmacias"],
-[value="Supermercado"]:checked ~ .container-category [for="Supermercado"] {
+[value="Servicios"]:checked ~ .container-category [for="Servicios"] {
   color: #fa5e4d;
 }
 
@@ -1456,7 +1456,7 @@ input[type="radio"] {
     justify-content: center;
   }
 
-  .social-icons-2 i {
+  .social-icons-2 a {
     padding-right: 0.25em;
   }
 
@@ -1503,7 +1503,7 @@ input[type="radio"] {
     color: #fa5e4d;
   }
 
-  .social-icons-2 i {
+  .social-icons-2 a {
     padding-right: 0.25em;
   }
 }

@@ -43,9 +43,9 @@
             <input type="radio" id="Farmacias" name="categories" value="Farmacias" />
             <input
               type="radio"
-              id="Supermercado"
+              id="Servicios"
               name="categories"
-              value="Supermercado"
+              value="Servicios"
             />
             <input type="radio" id="PHP" name="categories" value="PHP" />
             <input type="radio" id="NODEJS" name="categories" value="NODEJS" />
@@ -77,17 +77,15 @@
                 </li>
                 <li class="nav nav-restaurante opcion">
                   <font-awesome-icon icon="utensils" />
-                  <label class="border-0" for="Restaurantes">Restaurante</label>
+                  <label class="border-0" for="Restaurantes">Restaurantes</label>
                 </li>
                 <li class="nav nav-moda mb-2 mb-sm-0 opcion">
                   <font-awesome-icon icon="capsules" />
                   <label class="border-0" for="Farmacias">Farmacias</label>
                 </li>
                 <li class="nav opcion">
-                  <font-awesome-icon icon="shopping-cart" />
-                  <label class="border-0" for="Supermercado"
-                    >Supermercado</label
-                  >
+                  <font-awesome-icon icon="briefcase" />
+                  <label class="border-0" for="Servicios">Servicios</label>
                 </li>
               </ul>
             </div>
@@ -145,9 +143,8 @@
                     ¿Cómo Franquiciar mi negocio?
                   </p>
                   <p class="texto-cf mb-3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat.
+                    Si unos de los objetivos de tu marca es franquiciar con éxito el negocio 
+                    de productos y servicios que te han dado éxito, tienes que saber esto.
                   </p>
                   <button
                     type="button"
@@ -190,9 +187,8 @@
                     ¿Cómo Franquiciar mi negocio?
                   </p>
                   <p class="texto-cf mb-3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat.
+                    Si unos de los objetivos de tu marca es franquiciar con éxito el negocio 
+                    de productos y servicios que te han dado éxito, tienes que saber esto.
                   </p>
                   <button
                     type="button"
@@ -235,9 +231,8 @@
                     ¿Cómo Franquiciar mi negocio?
                   </p>
                   <p class="texto-cf mb-3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat.
+                    Si unos de los objetivos de tu marca es franquiciar con éxito el negocio 
+                    de productos y servicios que te han dado éxito, tienes que saber esto.
                   </p>
                   <button
                     type="button"
@@ -930,6 +925,7 @@ body{background-color: #ffffff} */
 
 .restaurante-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/restaurante-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .sombrainterna:hover {
@@ -939,14 +935,17 @@ body{background-color: #ffffff} */
 
 .moda-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/moda-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .supermercado-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/supermercado-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .belleza-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/belleza-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .belleza-categoria-recomendada > div > img{
@@ -956,10 +955,12 @@ body{background-color: #ffffff} */
 
 .deportes-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/deportes-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .saludybienestar-categoria-recomendada{
     background-image: url("../assets/img/Categorias-Recomendadas/saludybienestar-categoria-recomendada.jpg");
+    background-size: cover;
 }
 
 .margen-categorias-recomendadas{

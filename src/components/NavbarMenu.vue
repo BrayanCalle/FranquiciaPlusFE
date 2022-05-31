@@ -156,9 +156,18 @@
                 </ul>
 
                 <div class="social-icons-3 mt-4">
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-youtube"></i>
+                  <a href="https://www.instagram.com/franquicia_plus/">
+                    <font-awesome-icon :icon="['fab', 'instagram']" />
+                  </a>
+                  <a href="">
+                    <font-awesome-icon :icon="['fab', 'tiktok']" />
+                  </a>
+                  <a href="https://www.facebook.com/franquiciaplus/">
+                    <font-awesome-icon :icon="['fab', 'facebook']" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/franquicia-plus/">
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -169,4 +178,23 @@
   </header>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.social-icons-3{
+    font-size: 2.5em;
+    color: #fa5e4d;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 0.5em;
+}
+
+.social-icons-3 > a{
+    color: #fa5e4d;
+}
+
+
+.social-icons-3 a{
+  padding-right: 0.25em;
+}
+
+
+</style>

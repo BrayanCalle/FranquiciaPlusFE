@@ -7,6 +7,7 @@ import {
   faTimes,
   faStore,
   faUtensils,
+  faBriefcase,
   faTshirt,
   faCapsules,
   faShoppingCart,
@@ -22,7 +23,8 @@ import {
 import {
   faInstagram,
   faFacebook,
-  faYoutube,
+  faLinkedin,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -33,11 +35,13 @@ library.add(
   faTimes,
   faStore,
   faUtensils,
+  faBriefcase,
   faTshirt,
   faCapsules,
   faInstagram,
   faFacebook,
-  faYoutube,
+  faLinkedin,
+  faTiktok,
   faShoppingCart,
   faThLarge,
   faArrowLeft,
