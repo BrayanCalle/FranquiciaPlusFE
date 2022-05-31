@@ -297,6 +297,82 @@
     </section>
     <!-- Fin Sección como franquiciar mi negocio -->
 
+    <!-- Inicio Sección Categorías Recomendadas -->
+        <section class="mb-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <p class="titulo-section mb-3" data-i18n>Categorías Recomendadas</p>
+                        <p class="tipo-letra subtitulo-bye">Invierte en una empresa de exito</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 col-6">
+                        <div class="card text-white sombrainterna restaurante-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="utensils" />
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Restaurante</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="card text-white sombrainterna moda-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="capsules" />
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Farmacia</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-4 mt-4 mt-md-0 col-6">
+                        <div class="card text-white sombrainterna supermercado-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="shopping-cart" />
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Supermercado</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- 2 fila -->
+                    <div class="col-md-4 mt-4 col-6">
+                        <div class="card text-white sombrainterna belleza-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <img src="@/assets/img/Categorias-Recomendadas/belleza.png" alt="" class="mx-auto d-flex">
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Belleza</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4 mt-4 col-6">
+                        <div class="card text-white sombrainterna deportes-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="futbol" />
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Deportes</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-4 mt-4 col-6">
+                        <div class="card text-white sombrainterna saludybienestar-categoria-recomendada">
+                            <div class="card-img-overlay margen-categorias-recomendadas">
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="spa" />
+                              <p class="card-text d-flex justify-content-center my-md-2 nombre-categoria">Salud y bienestar</p>
+                              <font-awesome-icon class="d-flex justify-content-center w-100 iconos-categorias-recomendadas" icon="arrow-circle-right" />
+                            </div>
+                        </div>  
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Fin Sección Categorías Recomendadas -->
+
+
+
+
     <!-- Inicio Sección Blog y Eventos -->
     <section class="mb-5">
       <div class="container">
@@ -830,6 +906,83 @@ body{background-color: #ffffff} */
   display: inline-block;
 }
 /**-------------- End Slider ---------------**/
+
+
+/**-------------- Categoria Recomendadas ---------------**/
+.sombrainterna {
+    background-repeat: no-repeat;
+    background-size: 107%;
+    transition: all .5s linear;
+    border-color: white;
+    border-radius: 1.9375em;
+    box-shadow: inset 0px -5.125em 5em #02c7d7;
+    height: 25.125em;
+    width: 100%;
+    -webkit-border-radius: 1.9375em;
+    -moz-border-radius: 1.9375em;
+    -ms-border-radius: 1.9375em;
+    -o-border-radius: 1.9375em;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+.restaurante-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/restaurante-categoria-recomendada.jpg");
+}
+
+.sombrainterna:hover {
+    background-size: 120% ;
+    background-position: center center;
+}
+
+.moda-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/moda-categoria-recomendada.jpg");
+}
+
+.supermercado-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/supermercado-categoria-recomendada.jpg");
+}
+
+.belleza-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/belleza-categoria-recomendada.jpg");
+}
+
+.belleza-categoria-recomendada > div > img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.deportes-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/deportes-categoria-recomendada.jpg");
+}
+
+.saludybienestar-categoria-recomendada{
+    background-image: url("../assets/img/Categorias-Recomendadas/saludybienestar-categoria-recomendada.jpg");
+}
+
+.margen-categorias-recomendadas{
+    padding: 17em 3em 0rem;
+}
+
+.iconos-categorias-recomendadas{
+    font-size: 1.5em;
+}
+
+.nombre-categoria{
+    font-size: 1.75em;
+    font-family: "GT Walsheim Pro Bold";
+    font-weight: 900;
+}
+
+
+
+
+
+
+/**-------------- End Categoria Recomendadas ---------------**/
+
 
 /**----------- Start Media ----------**/
 

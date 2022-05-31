@@ -15,6 +15,9 @@ import {
   faArrowRight,
   faAngleLeft,
   faAngleRight,
+  faArrowCircleRight,
+  faFutbol,
+  faSpa,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -41,6 +44,9 @@ library.add(
   faArrowRight,
   faAngleLeft,
   faAngleRight,
+  faArrowCircleRight,
+  faFutbol,
+  faSpa,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
