@@ -32,6 +32,8 @@ export default {
         controls: true,
         controlsPosition: "bottom",
         controlsContainer: "#custom-control",
+        navPosition: "bottom",
+        navContainer: "#tns-navvid",
         autoplay: true,
         autoplayButtonOutput: false,
         freezable: false,
@@ -77,12 +79,12 @@ export default {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.tns-nav {
+.tns-navv {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.tns-nav button {
+.tns-navv button {
   height: 13px;
   width: 8px;
   background-color: #a5a5a5;
@@ -90,7 +92,7 @@ export default {
   margin-left: 7px;
   border-radius: 50%;
 }
-.tns-nav .tns-nav-active {
+.tns-navv .tns-nav-active {
   background-color: black;
 }
 </style>
